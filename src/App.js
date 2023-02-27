@@ -1,12 +1,19 @@
+import { Route, Routes } from "react-router-dom";
 import "./App.css";
-import { Provider } from "react-redux";
-import store from "./Redux/store";
+import { Navbar } from "./Components/Navbar";
+import { Cart } from "./Pages/Cart";
+
+import { Home } from "./Pages/Home";
 
 function App() {
   return (
-    <Provider store={store}>
-      <div></div>
-    </Provider>
+    <div>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/cart" element={<Cart />} />
+      </Routes>
+    </div>
   );
 }
 
