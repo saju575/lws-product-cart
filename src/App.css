@@ -1143,3 +1143,12 @@ video {
     padding-right: 2rem;
   }
 }
+
+/* my added  class */
+
+.disable{
+  cursor: not-allowed;
+}
+.plus-disbaled{
+  opacity: .4;
+}

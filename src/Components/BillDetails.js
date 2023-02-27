@@ -1,6 +1,10 @@
 import React from "react";
+import { useSelector } from "react-redux";
 
 export const BillDetails = () => {
+  const totalExpences = useSelector((state) =>
+    state.cart.reduce((count, item) => count + item.count * item.price, 0)
+  );
   return (
     <div>
       <div class="billDetailsCard">
@@ -10,7 +14,7 @@ export const BillDetails = () => {
           <div class="flex items-center justify-between">
             <p>Sub Total</p>
             <p>
-              BDT <span class="lws-subtotal">8800</span>
+              BDT <span class="lws-subtotal">{totalExpences.toFixed(2)}</span>
             </p>
           </div>
           {/* <!-- Discount --> */}
@@ -31,7 +35,7 @@ export const BillDetails = () => {
           <div class="flex items-center justify-between pb-4">
             <p class="font-bold">TOTAL</p>
             <p class="font-bold">
-              BDT <span class="lws-total">8800</span>
+              BDT <span class="lws-total">{totalExpences.toFixed(2)}</span>
             </p>
           </div>
           <button class="placeOrderbtn">place order</button>
