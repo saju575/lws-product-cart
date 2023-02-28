@@ -2,8 +2,9 @@ import { ADD_PRODUCT, ADD_TO_CART, REMOVE_FROM_CART } from "./actionTypes";
 import products from "./initialState";
 
 const nextProductId = (products) => {
-  const maxId = products.reduce((maxId, product) =>
-    Math.max(product.id, maxId)
+  const maxId = products.reduce(
+    (maxId, product) => Math.max(product.id, maxId),
+    -1
   );
   return maxId + 1;
 };

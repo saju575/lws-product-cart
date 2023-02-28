@@ -4,8 +4,8 @@ import { ProductsContainer } from "../Components/ProductsContainer";
 
 export const Home = () => {
   return (
-    <main class="py-16">
-      <div class="productWrapper">
+    <main className="py-16">
+      <div className="productWrapper">
         {/* <!-- products container --> */}
         <ProductsContainer />
         {/* <!-- products container ends --> */}

@@ -11,6 +11,7 @@ export const ProductsContainer = () => {
   };
   return (
     <div className="productContainer" id="lws-productContainer">
+      {products.length === 0 && <p>No Product Found</p>}
       {products.map((product) => (
         <Product
           key={product.id}
