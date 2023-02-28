@@ -28,4 +28,10 @@
 
 ### UI for this project
 
-![Home Page](./src/images/homePage.png "Home Page") ![Cart Page](./src/images/cartPage.png "Cart Page")
+#### Home page
+
+![Home Page](./src/images/homePage.png "Home Page")
+
+#### Cart page
+
+![Cart Page](./src/images/cartPage.png "Cart Page")
